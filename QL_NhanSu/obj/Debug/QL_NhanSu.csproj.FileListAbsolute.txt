@@ -1,0 +1,16 @@
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.config
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojResolveAssemblyReference.cache
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Properties.Resources.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.GenerateResource.Cache
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\bin\Debug\HeThong.dll
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\bin\Debug\HeThong.pdb
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmDanhSachNhanVien.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmNguoiDung.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmNhanVien.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmPhongBan.resources
+C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Form1.resources
