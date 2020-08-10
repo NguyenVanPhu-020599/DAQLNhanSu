@@ -30,24 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDanhSachNhanVien));
             this.label1 = new System.Windows.Forms.Label();
-            this.colMANV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colHOTEN = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView = new DevComponents.DotNetBar.Controls.ListViewEx();
-            this.colNGAYSINH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colGIOITINH = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colCMND = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colDIENTHOAI = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Thoat_toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.LamTuoi_toolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.lbl_NhanVien = new DevComponents.DotNetBar.LabelX();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.picHinhAnh = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -62,72 +55,24 @@
             this.label1.Text = "DANH SÁCH NHÂN VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // colMANV
-            // 
-            this.colMANV.Text = "MANV";
-            this.colMANV.Width = 57;
-            // 
-            // colHOTEN
-            // 
-            this.colHOTEN.Text = "Họ và Tên";
-            this.colHOTEN.Width = 200;
-            // 
-            // listView
-            // 
-            // 
-            // 
-            // 
-            this.listView.Border.Class = "ListViewBorder";
-            this.listView.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.colMANV,
-            this.colHOTEN,
-            this.colNGAYSINH,
-            this.colGIOITINH,
-            this.colCMND,
-            this.colDIENTHOAI});
-            this.listView.DisabledBackColor = System.Drawing.Color.Empty;
-            this.listView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView.FullRowSelect = true;
-            this.listView.GridLines = true;
-            this.listView.Location = new System.Drawing.Point(0, 0);
-            this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(769, 262);
-            this.listView.TabIndex = 2;
-            this.listView.UseCompatibleStateImageBehavior = false;
-            this.listView.View = System.Windows.Forms.View.Details;
-            // 
-            // colNGAYSINH
-            // 
-            this.colNGAYSINH.Text = "Ngày Sinh";
-            this.colNGAYSINH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colNGAYSINH.Width = 130;
-            // 
-            // colGIOITINH
-            // 
-            this.colGIOITINH.Text = "Giới Tính";
-            this.colGIOITINH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colGIOITINH.Width = 80;
-            // 
-            // colCMND
-            // 
-            this.colCMND.Text = "Số CMND";
-            this.colCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.colCMND.Width = 150;
-            // 
-            // colDIENTHOAI
-            // 
-            this.colDIENTHOAI.Text = "Phòng Ban";
-            this.colDIENTHOAI.Width = 150;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listView);
+            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 177);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(769, 262);
             this.panel2.TabIndex = 14;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(769, 262);
+            this.dataGridView1.TabIndex = 0;
             // 
             // Thoat_toolStripButton
             // 
@@ -136,6 +81,7 @@
             this.Thoat_toolStripButton.Name = "Thoat_toolStripButton";
             this.Thoat_toolStripButton.Size = new System.Drawing.Size(61, 22);
             this.Thoat_toolStripButton.Text = "Thoát";
+            this.Thoat_toolStripButton.Click += new System.EventHandler(this.Thoat_toolStripButton_Click);
             // 
             // LamTuoi_toolStripButton
             // 
@@ -174,7 +120,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.picHinhAnh);
             this.panel1.Controls.Add(this.lbl_NhanVien);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -182,16 +127,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(769, 152);
             this.panel1.TabIndex = 12;
-            // 
-            // picHinhAnh
-            // 
-            this.picHinhAnh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.picHinhAnh.Location = new System.Drawing.Point(26, 15);
-            this.picHinhAnh.Name = "picHinhAnh";
-            this.picHinhAnh.Size = new System.Drawing.Size(113, 117);
-            this.picHinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picHinhAnh.TabIndex = 68;
-            this.picHinhAnh.TabStop = false;
             // 
             // frmDanhSachNhanVien
             // 
@@ -203,12 +138,14 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmDanhSachNhanVien";
             this.Text = "frmDanhSachNhanVien";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDanhSachNhanVien_FormClosing);
+            this.Load += new System.EventHandler(this.frmDanhSachNhanVien_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picHinhAnh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,19 +154,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader colMANV;
-        private System.Windows.Forms.ColumnHeader colHOTEN;
-        public DevComponents.DotNetBar.Controls.ListViewEx listView;
-        private System.Windows.Forms.ColumnHeader colNGAYSINH;
-        private System.Windows.Forms.ColumnHeader colGIOITINH;
-        private System.Windows.Forms.ColumnHeader colCMND;
-        private System.Windows.Forms.ColumnHeader colDIENTHOAI;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ToolStripButton Thoat_toolStripButton;
         private System.Windows.Forms.ToolStripButton LamTuoi_toolStripButton;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private DevComponents.DotNetBar.LabelX lbl_NhanVien;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox picHinhAnh;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

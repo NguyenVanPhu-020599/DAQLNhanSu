@@ -31,5 +31,25 @@ namespace QL_NhanSu
         {
 
         }
+
+        private void labelX2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelX8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

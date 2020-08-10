@@ -32,18 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhongBan));
             this.labelX5 = new DevComponents.DotNetBar.LabelX();
             this.labelX4 = new DevComponents.DotNetBar.LabelX();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.txtGHICHU = new System.Windows.Forms.TextBox();
             this.txtSONHANVIEN = new System.Windows.Forms.TextBox();
-            this.txtMAPH = new System.Windows.Forms.TextBox();
             this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataNhanVien = new System.Windows.Forms.DataGridView();
             this.txtTENPH = new System.Windows.Forms.TextBox();
-            this.listViewExPhongBan = new DevComponents.DotNetBar.Controls.ListViewEx();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.dataPhongBan = new System.Windows.Forms.DataGridView();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.itemThoat = new DevComponents.DotNetBar.ButtonX();
             this.itemXoa = new DevComponents.DotNetBar.ButtonX();
@@ -53,11 +49,15 @@
             this.itemInNhanh = new DevComponents.DotNetBar.ButtonX();
             this.panel1 = new System.Windows.Forms.Panel();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.txtMaPB = new System.Windows.Forms.TextBox();
+            this.groupPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhanVien)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhongBan)).BeginInit();
             this.groupPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -86,18 +86,6 @@
             this.labelX4.TabIndex = 19;
             this.labelX4.Text = "Số Nhân Viên:";
             // 
-            // labelX3
-            // 
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Location = new System.Drawing.Point(48, 130);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(75, 23);
-            this.labelX3.TabIndex = 18;
-            this.labelX3.Text = "Ghi Chú:";
-            // 
             // labelX1
             // 
             // 
@@ -110,17 +98,6 @@
             this.labelX1.TabIndex = 16;
             this.labelX1.Text = "Mã Phòng:";
             // 
-            // txtGHICHU
-            // 
-            this.txtGHICHU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGHICHU.Location = new System.Drawing.Point(129, 130);
-            this.txtGHICHU.Multiline = true;
-            this.txtGHICHU.Name = "txtGHICHU";
-            this.txtGHICHU.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtGHICHU.Size = new System.Drawing.Size(411, 49);
-            this.txtGHICHU.TabIndex = 15;
-            // 
             // txtSONHANVIEN
             // 
             this.txtSONHANVIEN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -130,25 +107,16 @@
             this.txtSONHANVIEN.Size = new System.Drawing.Size(327, 20);
             this.txtSONHANVIEN.TabIndex = 13;
             // 
-            // txtMAPH
-            // 
-            this.txtMAPH.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMAPH.Location = new System.Drawing.Point(129, 34);
-            this.txtMAPH.Name = "txtMAPH";
-            this.txtMAPH.ReadOnly = true;
-            this.txtMAPH.Size = new System.Drawing.Size(327, 20);
-            this.txtMAPH.TabIndex = 9;
-            // 
             // groupPanel3
             // 
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.dataNhanVien);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 233);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 157);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(573, 100);
+            this.groupPanel3.Size = new System.Drawing.Size(573, 321);
             // 
             // 
             // 
@@ -179,15 +147,20 @@
             this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel3.TabIndex = 1;
             // 
-            // columnHeader2
+            // dataNhanVien
             // 
-            this.columnHeader2.Text = "Tên Phòng Ban";
-            this.columnHeader2.Width = 145;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "MP";
-            this.columnHeader1.Width = 40;
+            this.dataNhanVien.AllowUserToAddRows = false;
+            this.dataNhanVien.AllowUserToDeleteRows = false;
+            this.dataNhanVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataNhanVien.BackgroundColor = System.Drawing.Color.PowderBlue;
+            this.dataNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataNhanVien.GridColor = System.Drawing.Color.MediumTurquoise;
+            this.dataNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.dataNhanVien.Name = "dataNhanVien";
+            this.dataNhanVien.ReadOnly = true;
+            this.dataNhanVien.Size = new System.Drawing.Size(567, 318);
+            this.dataNhanVien.TabIndex = 1;
+            this.dataNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataNhanVien_CellClick);
             // 
             // txtTENPH
             // 
@@ -197,28 +170,6 @@
             this.txtTENPH.Name = "txtTENPH";
             this.txtTENPH.Size = new System.Drawing.Size(327, 20);
             this.txtTENPH.TabIndex = 11;
-            // 
-            // listViewExPhongBan
-            // 
-            // 
-            // 
-            // 
-            this.listViewExPhongBan.Border.Class = "ListViewBorder";
-            this.listViewExPhongBan.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.listViewExPhongBan.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.listViewExPhongBan.DisabledBackColor = System.Drawing.Color.Empty;
-            this.listViewExPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewExPhongBan.FullRowSelect = true;
-            this.listViewExPhongBan.GridLines = true;
-            this.listViewExPhongBan.Location = new System.Drawing.Point(0, 0);
-            this.listViewExPhongBan.MultiSelect = false;
-            this.listViewExPhongBan.Name = "listViewExPhongBan";
-            this.listViewExPhongBan.Size = new System.Drawing.Size(279, 460);
-            this.listViewExPhongBan.TabIndex = 2;
-            this.listViewExPhongBan.UseCompatibleStateImageBehavior = false;
-            this.listViewExPhongBan.View = System.Windows.Forms.View.Details;
             // 
             // splitContainer1
             // 
@@ -243,7 +194,7 @@
             this.groupPanel1.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel1.Controls.Add(this.listViewExPhongBan);
+            this.groupPanel1.Controls.Add(this.dataPhongBan);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel1.Location = new System.Drawing.Point(0, 0);
@@ -280,24 +231,36 @@
             this.groupPanel1.TabIndex = 0;
             this.groupPanel1.Text = "Danh Sách Phòng Ban";
             // 
+            // dataPhongBan
+            // 
+            this.dataPhongBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataPhongBan.BackgroundColor = System.Drawing.Color.PowderBlue;
+            this.dataPhongBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataPhongBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataPhongBan.GridColor = System.Drawing.Color.MediumTurquoise;
+            this.dataPhongBan.Location = new System.Drawing.Point(0, 0);
+            this.dataPhongBan.Name = "dataPhongBan";
+            this.dataPhongBan.Size = new System.Drawing.Size(279, 460);
+            this.dataPhongBan.TabIndex = 0;
+            this.dataPhongBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhongBan_CellClick);
+            this.dataPhongBan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataPhongBan_CellContentClick);
+            // 
             // groupPanel2
             // 
             this.groupPanel2.BackColor = System.Drawing.Color.Transparent;
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel2.Controls.Add(this.txtMaPB);
             this.groupPanel2.Controls.Add(this.labelX5);
             this.groupPanel2.Controls.Add(this.labelX4);
-            this.groupPanel2.Controls.Add(this.labelX3);
             this.groupPanel2.Controls.Add(this.labelX1);
-            this.groupPanel2.Controls.Add(this.txtGHICHU);
             this.groupPanel2.Controls.Add(this.txtSONHANVIEN);
             this.groupPanel2.Controls.Add(this.txtTENPH);
-            this.groupPanel2.Controls.Add(this.txtMAPH);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(573, 233);
+            this.groupPanel2.Size = new System.Drawing.Size(573, 157);
             // 
             // 
             // 
@@ -348,6 +311,7 @@
             this.itemXoa.Size = new System.Drawing.Size(75, 23);
             this.itemXoa.TabIndex = 4;
             this.itemXoa.Text = "Xóa";
+            this.itemXoa.Click += new System.EventHandler(this.itemXoa_Click);
             // 
             // itemLuu
             // 
@@ -358,6 +322,7 @@
             this.itemLuu.Size = new System.Drawing.Size(75, 23);
             this.itemLuu.TabIndex = 3;
             this.itemLuu.Text = "Lưu Lại";
+            this.itemLuu.Click += new System.EventHandler(this.itemLuu_Click);
             // 
             // itemThemMoi
             // 
@@ -368,6 +333,7 @@
             this.itemThemMoi.Size = new System.Drawing.Size(75, 23);
             this.itemThemMoi.TabIndex = 2;
             this.itemThemMoi.Text = "Thêm Mới";
+            this.itemThemMoi.Click += new System.EventHandler(this.itemThemMoi_Click);
             // 
             // itemBoQua
             // 
@@ -409,6 +375,15 @@
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "start.png");
             // 
+            // txtMaPB
+            // 
+            this.txtMaPB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaPB.Location = new System.Drawing.Point(129, 34);
+            this.txtMaPB.Name = "txtMaPB";
+            this.txtMaPB.Size = new System.Drawing.Size(327, 20);
+            this.txtMaPB.TabIndex = 21;
+            // 
             // frmPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,11 +393,15 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmPhongBan";
             this.Text = "frmPhongBan";
+            this.Load += new System.EventHandler(this.frmPhongBan_Load);
+            this.groupPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataNhanVien)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataPhongBan)).EndInit();
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -434,16 +413,10 @@
 
         private DevComponents.DotNetBar.LabelX labelX5;
         private DevComponents.DotNetBar.LabelX labelX4;
-        private DevComponents.DotNetBar.LabelX labelX3;
         private DevComponents.DotNetBar.LabelX labelX1;
-        private System.Windows.Forms.TextBox txtGHICHU;
         private System.Windows.Forms.TextBox txtSONHANVIEN;
-        private System.Windows.Forms.TextBox txtMAPH;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.TextBox txtTENPH;
-        private DevComponents.DotNetBar.Controls.ListViewEx listViewExPhongBan;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
@@ -455,5 +428,8 @@
         private DevComponents.DotNetBar.ButtonX itemInNhanh;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.DataGridView dataPhongBan;
+        private System.Windows.Forms.DataGridView dataNhanVien;
+        private System.Windows.Forms.TextBox txtMaPB;
     }
 }

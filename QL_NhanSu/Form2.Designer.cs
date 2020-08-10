@@ -1,6 +1,6 @@
 ﻿namespace QL_NhanSu
 {
-    partial class frmNhanVien
+    partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -201,6 +202,9 @@
             this.btLuuNhanVien = new DevComponents.DotNetBar.ButtonX();
             this.btXoaNhanVien = new DevComponents.DotNetBar.ButtonX();
             this.btThemNhanVien = new DevComponents.DotNetBar.ButtonX();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.groupPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -219,6 +223,23 @@
             this.groupPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(12, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.groupPanel1);
+            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+            this.splitContainer1.Size = new System.Drawing.Size(717, 475);
+            this.splitContainer1.SplitterDistance = 648;
+            this.splitContainer1.TabIndex = 0;
+            // 
             // groupPanel1
             // 
             this.groupPanel1.AutoSize = true;
@@ -228,9 +249,9 @@
             this.groupPanel1.Controls.Add(this.panel1);
             this.groupPanel1.Controls.Add(this.panel2);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel1.Location = new System.Drawing.Point(2, 1);
+            this.groupPanel1.Location = new System.Drawing.Point(3, 3);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(814, 661);
+            this.groupPanel1.Size = new System.Drawing.Size(728, 475);
             // 
             // 
             // 
@@ -267,7 +288,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 102);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(808, 370);
+            this.panel3.Size = new System.Drawing.Size(722, 370);
             this.panel3.TabIndex = 8;
             // 
             // panel6
@@ -276,7 +297,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(0, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(808, 370);
+            this.panel6.Size = new System.Drawing.Size(722, 370);
             this.panel6.TabIndex = 0;
             // 
             // tabControl1
@@ -291,7 +312,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.tabControl1.SelectedTabIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(808, 370);
+            this.tabControl1.Size = new System.Drawing.Size(722, 370);
             this.tabControl1.TabIndex = 10;
             this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControl1.Tabs.Add(this.tabItem1);
@@ -338,7 +359,7 @@
             this.tabControlPanel3.Location = new System.Drawing.Point(0, 42);
             this.tabControlPanel3.Name = "tabControlPanel3";
             this.tabControlPanel3.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel3.Size = new System.Drawing.Size(808, 328);
+            this.tabControlPanel3.Size = new System.Drawing.Size(722, 328);
             this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -816,7 +837,7 @@
             this.tabControlPanel1.Location = new System.Drawing.Point(0, 42);
             this.tabControlPanel1.Name = "tabControlPanel1";
             this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel1.Size = new System.Drawing.Size(808, 328);
+            this.tabControlPanel1.Size = new System.Drawing.Size(722, 328);
             this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1477,7 +1498,7 @@
             this.tabControlPanel2.Location = new System.Drawing.Point(0, 42);
             this.tabControlPanel2.Name = "tabControlPanel2";
             this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel2.Size = new System.Drawing.Size(808, 328);
+            this.tabControlPanel2.Size = new System.Drawing.Size(722, 328);
             this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
             this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
             this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
@@ -1811,7 +1832,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(1, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(806, 198);
+            this.groupBox1.Size = new System.Drawing.Size(720, 198);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Tuyển Dụng";
@@ -2138,7 +2159,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(808, 102);
+            this.panel1.Size = new System.Drawing.Size(722, 102);
             this.panel1.TabIndex = 7;
             // 
             // radNu
@@ -2399,7 +2420,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(808, 655);
+            this.panel2.Size = new System.Drawing.Size(722, 469);
             this.panel2.TabIndex = 9;
             // 
             // panel7
@@ -2409,7 +2430,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(808, 655);
+            this.panel7.Size = new System.Drawing.Size(722, 469);
             this.panel7.TabIndex = 1;
             // 
             // groupPanel2
@@ -2426,7 +2447,7 @@
             this.groupPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupPanel2.Location = new System.Drawing.Point(0, 0);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(808, 655);
+            this.groupPanel2.Size = new System.Drawing.Size(722, 469);
             // 
             // 
             // 
@@ -2523,15 +2544,19 @@
             this.btThemNhanVien.TabIndex = 52;
             this.btThemNhanVien.Text = "Thêm Mới";
             // 
-            // frmNhanVien
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 645);
-            this.Controls.Add(this.groupPanel1);
-            this.Name = "frmNhanVien";
-            this.Text = "frmNhanVien";
-            this.Load += new System.EventHandler(this.frmNhanVien_Load);
+            this.ClientSize = new System.Drawing.Size(911, 475);
+            this.Controls.Add(this.splitContainer1);
+            this.Name = "Form2";
+            this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -2553,12 +2578,12 @@
             this.panel7.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.SplitContainer splitContainer1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
@@ -2730,7 +2755,6 @@
         private DevComponents.DotNetBar.ButtonX btLuuNhanVien;
         private DevComponents.DotNetBar.ButtonX btXoaNhanVien;
         private DevComponents.DotNetBar.ButtonX btThemNhanVien;
-
 
     }
 }

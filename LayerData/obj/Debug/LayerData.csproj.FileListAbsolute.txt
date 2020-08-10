@@ -1,0 +1,5 @@
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\LayerData\bin\Debug\LayerData.dll.config
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\LayerData\bin\Debug\LayerData.dll
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\LayerData\bin\Debug\LayerData.pdb
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\LayerData\obj\Debug\LayerData.dll
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\LayerData\obj\Debug\LayerData.pdb

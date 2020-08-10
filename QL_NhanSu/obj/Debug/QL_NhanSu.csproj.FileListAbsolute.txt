@@ -14,3 +14,23 @@ C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\ob
 C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmNhanVien.resources
 C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmPhongBan.resources
 C:\Users\nguye\OneDrive\Máy tính\DA\DA_PhatTrienPhanMem\QL_NhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Form1.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe.config
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.pdb
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.exe
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\QL_NhanSu.pdb
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\HeThong.pdb
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csprojResolveAssemblyReference.cache
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Form1.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmDanhSachNhanVien.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmMain.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmNguoiDung.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmNhanVien.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmPhongBan.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Properties.Resources.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.csproj.GenerateResource.Cache
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.exe.licenses
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.Form2.resources
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\LayerData.dll
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\bin\Debug\LayerData.pdb
+C:\Users\DoiLaTheThoi-Phu\Documents\GitHub\DAQLNhanSu\QL_NhanSu\obj\Debug\QL_NhanSu.frmLogin.resources
