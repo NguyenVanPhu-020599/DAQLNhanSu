@@ -16,7 +16,7 @@ namespace QL_NhanSu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPhongBan());
+            Application.Run(new frmNhanVien());
         }
     }
 }
